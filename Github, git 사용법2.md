@@ -11,7 +11,7 @@
 2. IntelliJ 키고
 3. terminal을 열어줌
    (IntelliJ와 GitBash 연동된 상태)
-4. <u>**git clone 저장소주소**</u> 를 입력
+4. <u>**git remote add <name> <저장소주소>**</u> 를 입력
 ---
 ### 2단계  - 지워보자
 1. <u>**rm -rf 파일명**</u> 를 입력
