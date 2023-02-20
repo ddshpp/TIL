@@ -19,7 +19,7 @@
 List<List<Integer>> test = new ArrayList<>();
 
 for (int i = 0; i < 5; i++) {
-test.add(new ArrayList<>());
+  test.add(new ArrayList<>());
 }
 
 System.out.println(test.size());
@@ -30,7 +30,7 @@ System.out.println(test.size());
 List<List<Integer>> test = new ArrayList<>();
 
 for (int i = 0; i < 5; i++) {
-test.add(new ArrayList<>());
+  test.add(new ArrayList<>());
 }
 
 System.out.println(test.size());
@@ -59,13 +59,13 @@ System.out.println(test.get(0).get(1));
 
 ---
 ## [방법2]  - 검색하다 찾은 방법. <br> (리스트를 원소로 가지는 배열을 만드는듯)
-<상황> list를 3개 가지는 배열을 만들려면
+<상황> list를 3개 가지는 배열을 만들려면 (위와 같은 값을 넣어보았다)
 ```java
 ArrayList[] test = new ArrayList[3];
 
-test[0] = new ArrayList<Integer>();
-test[1] = new ArrayList<Integer>();
-test[2] = new ArrayList<Integer>();
+for (int i = 0; i < 3; i++) {
+    test[i] = new ArrayList<Integer>();
+}
 
 System.out.println(test.length);
 //출력결과 : 3
