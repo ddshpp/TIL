@@ -59,12 +59,16 @@ System.out.println(test.get(0).get(1));
 
 ---
 ## [방법2]  - 검색하다 찾은 방법. <br> (리스트를 원소로 가지는 배열을 만드는듯)
-<상황> list를 3개 가지는 배열을 만들려면
+<상황> list를 3개 가지는 배열을 만들려면 (위와 같은 값을 넣어보았다)
 ```java
 ArrayList[] test = new ArrayList[3];
 
+<<<<<<< HEAD
 //추가하는 방식이 다르다
 for (int i = 0; i < 5; i++) {
+=======
+for (int i = 0; i < 3; i++) {
+>>>>>>> 28ba475214f8d924280d1ad912a6845f916a3ffb
     test[i] = new ArrayList<Integer>();
 }
 
