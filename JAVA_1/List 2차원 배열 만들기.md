@@ -19,7 +19,7 @@
 List<List<Integer>> test = new ArrayList<>();
 
 for (int i = 0; i < 5; i++) {
-test.add(new ArrayList<>());
+    test.add(new ArrayList<>());
 }
 
 System.out.println(test.size());
@@ -30,7 +30,7 @@ System.out.println(test.size());
 List<List<Integer>> test = new ArrayList<>();
 
 for (int i = 0; i < 5; i++) {
-test.add(new ArrayList<>());
+    test.add(new ArrayList<>());
 }
 
 System.out.println(test.size());
@@ -63,10 +63,12 @@ System.out.println(test.get(0).get(1));
 ```java
 ArrayList[] test = new ArrayList[3];
 
-test[0] = new ArrayList<Integer>();
-test[1] = new ArrayList<Integer>();
-test[2] = new ArrayList<Integer>();
+//추가하는 방식이 다르다
+for (int i = 0; i < 5; i++) {
+    test[i] = new ArrayList<Integer>();
+}
 
+//출력도 size()로 하면 안된다
 System.out.println(test.length);
 //출력결과 : 3
 
@@ -97,10 +99,11 @@ System.out.println(test[0].size());
 <br>
 이유는 <br>
 아래 방법은 코드를 보면 <br>
-1. 리스트를 원소로 가지는 test의 크기를 구할땐 length를 써야한다 
-2. 각각 원소의 크기를 구할땐 size()를 써야한다
+1. 우선 생성하는 방식이 낯설다..(잘 생각 안날것 같다)
+2. 리스트를 원소로 가지는 test의 크기를 구할땐 length를 써야한다 
+3. 각각 원소의 크기를 구할땐 size()를 써야한다
 
-왜 그렇게 해야하는지는 알겠다 <br>
+왜 length쓰고 size쓰고 해야하는지는 알겠다 <br>
 하지만 test라는 저 덩어리를 볼때 일관성이 없다해야하나? 그래보인다 <br>
 뭔가 실수할 여지를 만드는거 같아서 별로...<br>
 
