@@ -63,12 +63,8 @@ System.out.println(test.get(0).get(1));
 ```java
 ArrayList[] test = new ArrayList[3];
 
-<<<<<<< HEAD
 //추가하는 방식이 다르다
-for (int i = 0; i < 5; i++) {
-=======
 for (int i = 0; i < 3; i++) {
->>>>>>> 28ba475214f8d924280d1ad912a6845f916a3ffb
     test[i] = new ArrayList<Integer>();
 }
 
@@ -93,7 +89,7 @@ System.out.println(test[0].get(0));
 //출력결과 : 1
 System.out.println(test[0].get(1));
 //출력결과 : 2
-
+        
 System.out.println(test[0].size());
 //출력결과 : 2
 ```
