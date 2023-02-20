@@ -19,7 +19,7 @@
 List<List<Integer>> test = new ArrayList<>();
 
 for (int i = 0; i < 5; i++) {
-  test.add(new ArrayList<>());
+    test.add(new ArrayList<>());
 }
 
 System.out.println(test.size());
@@ -30,7 +30,7 @@ System.out.println(test.size());
 List<List<Integer>> test = new ArrayList<>();
 
 for (int i = 0; i < 5; i++) {
-  test.add(new ArrayList<>());
+    test.add(new ArrayList<>());
 }
 
 System.out.println(test.size());
